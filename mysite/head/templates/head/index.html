@@ -1,0 +1,23 @@
+{% extends 'head/layout.html' %}
+{% block title %} <p1>Main</p1> {% endblock %}
+
+{% block content %}
+<div class="features">
+
+    <h1>{{title}}, {{cocntent}}</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae consequatur culpa delectus, facere fuga illo quis repudiandae similique veritatis.</p>
+    <button class="btn btn-warning">main</button>
+    {% for el in values %}
+        {% if el == 'hellow' %}
+            {% filter upper %}
+                <p>{{ el }}</p>
+            {% endfilter %}
+        {% endif %}
+    {% endfor %}
+
+    {% for el in obj.values %}
+        {{ el }}
+    {% endfor %}
+</div>
+
+{% endblock %}

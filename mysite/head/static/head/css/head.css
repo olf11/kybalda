@@ -1,0 +1,66 @@
+body {
+    background: black;
+}
+
+aside{
+    float: left;
+    background: grey;
+    width: 15%;
+    padding: 2.5%;
+    height: 100vh;
+    color: yellow;
+    border-right: 2px solid;
+}
+aside img{
+    width: 200px;
+    float: right;
+}
+
+aside .logo {
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -53px;
+    right: -105px;
+}
+
+aside h1{
+    color: red;
+    margin-top: -50px;
+    font-size: 25px;
+}
+
+aside ul {list-style: none;}
+aside ul li {
+    color: darkblue;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+    text-decoration: none;
+
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: azure;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main p {
+    color: red;
+}
+
+main .features {
+    float: left;
+    color: red;
+    text-align: center;
+    margin-top: 50px;
+    width: 75%;
+
+}
+/*размеры и позиция на главной странице*/
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400px; margin: 20px auto;}
+
+
